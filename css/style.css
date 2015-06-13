@@ -102,6 +102,12 @@ a:hover {
 .navbar-nav {
 	word-spacing: 3px;
 }
+.navbar-header span.icon-bar {
+	background-color: #e8603c;
+}
+.navbar-header a.navbar-brand:hover {
+	color: #e8603c;
+}
 
 /*----------------------------------Carousel-----------------------------------------*/
 .carousel-caption {
@@ -110,7 +116,7 @@ a:hover {
 	text-align: left;
 	padding: 20px;
 	max-width: 414px;
-	/*height: 68px;*/
+	max-height: 120px;
 	position: absolute;
 	left: 36px;
 	bottom: 9%;
@@ -120,6 +126,8 @@ a:hover {
 	font: 18px "Bebas", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	text-shadow: none;
+	margin-top: 0;
+	margin-bottom: 16px;
 }
 .carousel-caption p {
 	font: 12px Arial, Helvetica, sans-serif;
@@ -128,6 +136,9 @@ a:hover {
 .carousel-inner img {
 	width: 100%;
 }
+/*.je-slider .carousel-control:hover {
+	opacity: 0;
+}*/
 /*----------------------------------Small img-----------------------------------------*/
 .je-small-img {
 	margin-top: 18px;
@@ -151,7 +162,7 @@ a:hover {
 	/*padding-bottom: 30px;*/
 }
 .je-media img{
-	width: 46px;
+	/*width: 46px;*/
 	height: 46px;
 	float: left;
 }
@@ -167,7 +178,7 @@ a:hover {
 .je-media p {
 	font: 12px Arial, Helvetica, sans-serif;
 	line-height: 1.5;
-	padding-top: 20px;
+	padding-top: 32px;
 	padding-bottom: 20px;
 	color: #414141;
 	text-align: left;
@@ -214,6 +225,9 @@ a:hover {
 }
 .je-resent img {
 	width: 100%;
+}
+.je-resent-hover img:hover {
+	opacity: .65;
 }
 .je-resent .je-text {
 	border: 1px solid #dbdbdb;
@@ -268,6 +282,7 @@ a:hover {
 .je-footer h2 {
 	font: 20px "Bebas", Arial, Helvetica, sans-serif;
 	margin-bottom: 26px;
+	margin-top: 15px;
 	text-transform: uppercase;
 }
 .je-footer p {
@@ -290,6 +305,15 @@ a:hover {
 	width: 30px;
 	height: 30px;
 }
+.jet-social img:hover {
+	position: relative;
+	top: -10px;
+	transition: top .7s;
+}
+.je-footer [class*=col-] {
+	padding-left: 24px;
+}
+
 /*---------------------PORTFOLIO PAGE------------------------------*/
 /*-----------Header----------*/
 .je-pf-header {
@@ -343,7 +367,7 @@ a:hover {
 }
 /*-----------pf-item----------*/
 .je-pf-item {
-	margin-top: 40px;
+	margin-top: 36px;
 }
 .je-pf-item [class*="col-"] {
 	margin-bottom: 40px;
@@ -680,4 +704,30 @@ textarea {
 	background-color: #fff;
 	color: #e8603c;
 	transition: background-color .5s, color .5s;
+}
+input[type="text"]::-webkit-input-placeholder{
+	color: #e8603c;
+}
+input[type="text"]::-moz-placeholder {
+	color: #e8603c;
+}input[type="text"]:-ms-input-placeholder {
+	 color: #e8603c;
+ }
+input[type="email"]::-webkit-input-placeholder {
+	color: #e8603c;
+}
+input[type="email"]::-moz-placeholder {
+	color: #e8603c;
+}
+input[type="email"]:-ms-input-placeholder {
+	color: #e8603c;
+}
+textarea::-webkit-input-placeholder {
+	color:#e8603c !important;
+}
+textarea::-moz-placeholder {
+	color:#e8603c !important;
+}
+textarea:-ms-input-placeholder {
+	color:#e8603c !important;
 }
